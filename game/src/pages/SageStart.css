@@ -1,0 +1,44 @@
+.containerss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: rgba(251, 251, 251, 0); 
+  }
+
+.myButtonss {
+    background-color: #11f692;
+    border: solid #e6cc0f;
+    border-radius: 30px;
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .myButtonss.clicked {
+    animation: buttonClickAnimation 0.5s;
+  }
+  
+  @keyframes buttonClickAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .myButtonss.fadeIn {
+    opacity: 1;
+  }
